@@ -1,0 +1,121 @@
+body {
+	background-color: saddlebrown;
+}
+
+h1 {
+	color: white;
+	text-align: center;
+	font-size:1.7rem;
+}
+
+#Timer, #moves, #stars  {
+	font-family: verdana;
+	font-size: 1.3rem;
+	text-align: center;
+	color: yellow;
+}
+
+#moves  {
+	color: red;
+}
+
+
+#buttons {
+	margin: auto;
+	position:relative;
+	text-align: center;
+}
+
+button {
+	background-color: white;
+	min-width: 100px;
+	border-radius: 5px;
+	cursor: pointer;
+	width: 8%;
+	margin: 1%;
+	font-size: 0.7rem;
+}
+
+
+#theBoard {
+	background-color: green;
+	border: 1px solid black;
+	height: 33rem;
+	width: 35.5%;
+	min-width: 320px;
+	max-width:400px;
+	margin: auto;
+	position: relative;
+}
+
+
+ .backOfTheCard {
+ 	background-image: url("graphics/cardback.gif");
+	height:21%;
+	width:19.5%;
+	float:left;
+	margin: 2.675%;
+	cursor:pointer;
+}
+
+.frontOfTheCard {
+ 	background-color: white;
+	height:100%;
+	width:100%;
+	float:left;
+	cursor:pointer;
+	visibility: hidden;
+	text-align: center;
+	font-size: 3em;
+	line-height:2.25em;
+}
+
+/*The Score Board Modal */
+
+.modal {
+    display: none; /* Hidden by default ('none' or 'block') */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 200px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+    background-color: lightgreen;
+    margin: auto;
+    padding: 1%;
+    border: 1px solid #888;
+    width: 70%;
+    min-width: 310px;
+}
+
+/* The Close Button */
+#cross {
+    color: #aaaaaa;
+    float: right;
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+#cross:hover,
+#cross:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#data{
+	text-align: center;
+}
+
+#btnScoreBoard {
+	margin-top: 3%;
+	text-align: right;
+}

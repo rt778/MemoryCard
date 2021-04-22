@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+	<title>Memory Card</title>
+	<link rel="stylesheet" type="text/css" href="MemoryCard.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> 
+</head>
+
+<body>
+ 
+	<div id="divTitle">
+		<h1 id="h1Title">My Memory Card Game Version 1</h1>
+		<div id="Timer">Timer: <span id="seconds">00</span>:<span id="tens">00</span></div>
+		<div id="moves">Number of moves: <span>00</span></div>
+		<div id="stars">Your Rating: &bigstar; &bigstar; &bigstar;</div>		
+	</div>
+	
+	<div id="buttons">
+		<button class="newGameBtn">Restart</button>
+		<button id="dealBtn">Deal the cards</button>	
+	</div>
+
+	<div id="theBoard"></div> <!--The DOM dynamically generated will go inside the board -->
+
+
+
+	<!--The ScoreBoard Modal-->
+
+<div id="scoreBoardModal" class="modal">
+
+        <!-- Modal content -->
+        <div class="modal-content">
+            <span id="cross" class="close">&times;</span> <!--This is the cross top right corner to close the page-->
+            <h1>The Leaderboard</h1>
+            <div id="congratPlayer"></div> <!-- this is the div in which the player will be congratulated dynamically-->
+
+            <div id="top5">
+
+            <div id="btnScoreBoard">
+                <button class="newGameBtn">Play Again</button>
+                <button class="close">Cancel</button>
+            </div>
+
+        </div>
+    </div>        
+
+	<!--Loading the scripts-->
+	<script type="text/javascript" src="MemoryCard.js" async></script>
+	<script type="text/javascript" src="Timer.js" async></script>
+    <script type="text/javascript" src="scoreBoard.js" async></script>
+
+</body>
+
+</html>
